@@ -64,9 +64,9 @@ else if( computerMove == 'nożyce' && playerMove == 'kamień'){
 else if( computerMove == 'kamień' && playerMove == 'nieznany ruch'){
   printMessage('Wpisz 1,2 lub 3!');
 }
-else if( computerMove == 'kamień' && playerMove == 'nieznany ruch'){
+else if( computerMove == 'nożyce' && playerMove == 'nieznany ruch'){
   printMessage('Wpisz 1,2 lub 3!');
 }
-else if( computerMove == 'kamień' && playerMove == 'nieznany ruch'){
+else if( computerMove == 'papier' && playerMove == 'nieznany ruch'){
   printMessage('Wpisz 1,2 lub 3!');
 }
