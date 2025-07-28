@@ -71,7 +71,8 @@
     }
 
 function playGame (playerInput)  {
-
+    clearMessages();
+    printMessage ('Nowa Gra');
     console.log('Start gry Kamień, Papier, Nożyce');
 
     let randomNumber = Math.floor(Math.random() * 3 + 1);
@@ -83,24 +84,24 @@ function playGame (playerInput)  {
 
     /*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
 
-    console.log('Gracz kliknął: ' + playerInput);
+    console.log('Gracz wybrał: ' + playerInput);
 
     let PlayerMove = getMoveName (playerInput);
     console.log ('ruch gracza to:', PlayerMove);
-
     printMessage('Twój ruch to: ' + PlayerMove)
 
     let result = displayResult(ComputerMove, PlayerMove);
     console.log('Kto wygrał: ' + result);
 }
-    let rockButton = document.getElementById('play-rock');
-    let paperButton = document.getElementById('play-paper');
-    let scissorsButton = document.getElementById('play-scissors');
+
+let rockButton = document.getElementById('play-rock');
+rockButton.addEventListener('click', function() {playGame(1);
+});
+let paperButton = document.getElementById('play-paper');
+paperButton.addEventListener('click', function() {playGame(2);
+});
+let scissorsButton = document.getElementById('play-scissors');
+scissorsButton.addEventListener('click', function() {playGame(3)
+});
 
 
-    rockButton.addEventListener('click', function() {playGame(1);
-    });
-    paperButton.addEventListener('click', function() {playGame(2);
-    });
-    scissorsButton.addEventListener('click', function() {playGame(3)
-    });
