@@ -1,6 +1,6 @@
 
-let x = 0;
-let y = 0;
+let playerScore = 0;
+let computerScore = 0;
 
 function getMoveName(argMoveId){
   console.log('Funkcja getMoveName została wywołana z argumentem:', argMoveId);
@@ -31,7 +31,7 @@ printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
   if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
     printMessage('Ty wygrywasz!');
-    x = x+1
+    playerScore++
     return 'wygrywasz!';
   } 
   else if (argComputerMove == 'kamień' && argPlayerMove == 'kamień'){
@@ -40,7 +40,7 @@ printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
   } 
   else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
     printMessage('Tym razem przegrywasz :(');
-    y = y+1
+    computerScore++
     return 'przegrywasz!';
   } 
   else if (argComputerMove == 'papier' && argPlayerMove == 'papier'){
@@ -49,22 +49,22 @@ printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
   } 
   else if (argComputerMove == 'papier' && argPlayerMove == 'kamień'){
     printMessage('Tym razem przegrywasz :(');
-    y = y+1
+    computerScore++
     return 'przegrywasz!';
   } 
   else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
     printMessage('Ty wygrywasz!');
-    x = x+1
+    playerScore++
     return 'wygrywasz!';
   } 
   else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
     printMessage('Tym razem przegrywasz :(');
-    y = y+1
+    computerScore++
     return 'przegrywasz!';
   } 
   else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
     printMessage('Ty wygrywasz!');
-    x = x+1
+    playerScore++
     return 'wygrywasz!';
   } 
   else if (argComputerMove == 'nożyce' && argPlayerMove == 'nożyce'){
@@ -78,13 +78,13 @@ printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
 function displayScore (){
-  document.getElementById('player-score').textContent='wygrałeś; '+ x;
-  document.getElementById('computer-score').textContent='przegrałeś; '+ y;
+  document.getElementById('player-score').textContent='Gracz  '+ playerScore;
+  document.getElementById('computer-score').textContent='Komputer  '+ computerScore;
 }
 
 function playGame (playerInput)  {
     clearMessages();
-    printMessage ('Nowa Gra');
+    
     console.log('Start gry Kamień, Papier, Nożyce');
 
     let randomNumber = Math.floor(Math.random() * 3 + 1);

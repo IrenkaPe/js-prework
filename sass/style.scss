@@ -1,0 +1,102 @@
+/*global*/
+*,* ::before,* ::after {
+box-sizing: border-box;
+} 
+
+body{
+    margin:0 auto;
+    margin-top: 20px;
+    text-align: center;
+    background:#fff;
+    line-height: 1.7;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 1.5;
+    display: block; 
+    width: 50%;
+    color: #2a2a3f;
+}
+.game {
+    background: rgba(169, 99, 240, 0.345);
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px rgb(166, 128, 128);
+    padding: 20px;
+}
+h1{
+    font-size: 14px;
+    font-weight: 800;
+}
+h2 {
+    font-size: 11px;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.buttons{
+margin: 0 auto;
+margin-bottom: 15px;
+}
+
+.button {
+    width: 60px;
+    height: 70px;
+    border: none; 
+    border-radius: 5px;
+    margin:10px 10px;
+    color:#fff;
+    font-weight: 700;
+    font-size: 13px;
+    box-shadow: 5px 3px 3px rgb(222, 172, 172);
+    &:hover {
+        opacity: 0.3;
+        cursor: pointer;
+        transform: translateY(-3px);
+        transition: all 1s;
+    }   
+}
+.button-rock{
+    background: rgba(234, 21, 21, 0.757);
+}
+
+.button-paper{
+    background: rgba(7, 146, 226, 0.729);
+}
+
+.button-scissors{
+    background: rgba(111, 217, 57, 0.96);
+}
+i {
+    font-size: 25px;
+    margin-top: 5px;
+    color:#fff;
+}
+.message-wrapper {
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 30 auto;
+    background-color: rgba(202, 105, 232, 0.276);
+    display:block;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 4px 2px 2px rgb(222, 172, 172);
+}
+.score {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 90px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    color:white;
+    box-shadow: 2px 1px 1px rgb(222, 172, 172);
+    
+}
+.player-score {
+    background: rgba(111, 217, 57, 0.96);
+}
+.computer-score {
+    background: rgba(234, 21, 21, 0.757);
+}

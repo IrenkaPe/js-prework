@@ -3,24 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>Kamień, papier, nożyce</title>
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-			<button id="play-rock">Kamień</button>
-  			<button id="play-paper">Papier</button>
-  			<button id="play-scissors">Nożyce</button>
+	<div class="game">
+	<header>
+		<div class="container inner">
+			<div class="inner-wrapper">
+				<h1> Papier Kamień Nożyce </h1>
+				<h2> Wybierz kamień, papier lub nożyce i sprawdź czy wygrałeś</h2>
+			</div>
 		</div>
-		<div id="result">
-			<div id="player-score"> </div>
-			<div id="computer-score"> </div>
-			
+	</header>
+	<div class="container box-content">
+		<div class="button-wrapper">
+			<div class="buttons">
+				<button id="play-rock" type="button" class="button button-rock">
+					<i class="fa-solid fa-hand-back-fist"></i>Kamień
+				</button>
+				<button id="play-paper" type="button" class="button button-paper">
+					<i class="fa-solid fa-hand"></i>Papier
+				</button>
+				<button id="play-scissors" type="button" class="button button-scissors">
+					<i class="fa-solid fa-hand-scissors"></i>Nożyce
+				</button>
+			</div>
 		</div>
-		<div id="messages"></div>
+		<div class="message-wrapper">
+			<div id="messages" class="messages"></div>
+		</div>
+		<div id="result" class="result">
+			<div id="player-score" class="player-score score"> </div>
+			<div id="computer-score" class="computer-score score"> </div>
+		</div>
 	</div>
-	<script src="js/functions.js"></script>
-	<script src="js/script.js"></script>
+	</div>
+<script src="js/functions.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
