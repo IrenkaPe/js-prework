@@ -42,7 +42,7 @@ margin-bottom: 15px;
     height: 70px;
     border: none; 
     border-radius: 5px;
-    margin:10px 10px;
+    margin:10px ;
     color:#fff;
     font-weight: 700;
     font-size: 13px;
@@ -72,18 +72,19 @@ i {
 }
 .message-wrapper {
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 700;
     padding: 30 auto;
     background-color: rgba(202, 105, 232, 0.276);
-    display:block;
+    display: block;
     width: 70%;
     margin: 0 auto;
     box-shadow: 4px 2px 2px rgb(222, 172, 172);
 }
 .score {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding: 0;
     display: inline-block;
     border-radius: 5px;
     width: 90px;
