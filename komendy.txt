@@ -1,0 +1,3 @@
+npm install html-validate --save-dev - komenda do instalacji pakietu
+html-validate index.html - użycie we wskazanym pliku 
+html-validate "src/**/*.html" - użycie we wszystkich plikach z rozszerzeniem html w katalogu projektu
